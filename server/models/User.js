@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   role: {
     type: String,
-    enum: ['admin', 'user'],  // only these two values allowed
+    enum: ['admin', 'user'],
     default: 'user'
   }
 }, { timestamps: true }); // Adds createdAt and updatedAt
